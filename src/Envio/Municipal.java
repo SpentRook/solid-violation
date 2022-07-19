@@ -4,6 +4,11 @@ public class Municipal implements IEnvio {
 
     private Integer precio;
 
+    /**
+     * Constructor de envio tipo Municipal
+     * 
+     * @param precio el precio del envio
+     */
     public Municipal(Integer precio) {
         this.precio = precio;
     }
