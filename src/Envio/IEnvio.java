@@ -3,8 +3,6 @@ package Envio;
 /**
  * Interface que define las reglas de
  * cualquier tipo de envio.
- * 
- * @author Richard Guevara
  */
 public interface IEnvio {
     /**

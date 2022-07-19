@@ -1,25 +1,28 @@
-import Envio.Envio;
+import Envio.IEnvio;
+import Envio.Intermunicipal;
+import Envio.Internacional;
+import Envio.Municipal;
+import ImpresoraEnvios.ImpresoraEnvios;
 
+/**
+ * Clase principal que hace uso de envios y de ImpresoraEnvios
+ * 
+ * @author Richard Guevara
+ */
 public class Principal {
 
+  /**
+   * Clase main para ejecutar el programa
+   * 
+   * @param args No usados
+   */
   public static void main(String[] args) {
-    Envio[] envios = {
-        new Envio("Municipal", 5000),
-        new Envio("Intermunicipal", 15000),
-        new Envio("Internacional", 25000)
+    IEnvio[] envios = {
+        new Municipal(5000),
+        new Intermunicipal(15000),
+        new Internacional(25000)
     };
-    imprimirTiempoDeEnvio(envios);
-    imprimirTiempoDeEnvio(envios);
-  }
 
-  public static void imprimirTiempoDeEnvio(Envio[] envios) {
-    for (Envio coche : envios) {
-      if (coche.tipo.equals("Municipal"))
-        System.out.println("Tiempo envio 12 horas");
-      if (coche.tipo.equals("Intermunicipal"))
-        System.out.println("Tiempo envio 36 horas");
-      if (coche.tipo.equals("Internacional"))
-        System.out.println("Tiempo envio 90 horas");
-    }
+    ImpresoraEnvios.imprimirTiempoDeEnvio(envios);
   }
 }
