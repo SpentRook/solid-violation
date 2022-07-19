@@ -1,9 +1,11 @@
+package Envio;
+
 public class Envio {
 
-  String tipo;
+  public String tipo;
   Integer precio;
 
-  Envio(String tipo, Integer precio) {
+  public Envio(String tipo, Integer precio) {
     this.tipo = tipo;
     this.precio = precio;
   }
@@ -13,6 +15,6 @@ public class Envio {
   }
 
   void crearTipoEnvio(Envio envio) {
-    //Save Envio DB
+    // Save Envio DB
   }
 }
