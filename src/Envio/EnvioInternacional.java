@@ -2,34 +2,32 @@ package Envio;
 
 /**
  * Implementacion de las reglas de IEnvio en
- * el envio de tipo Municipal.
+ * el envio de tipo Internacional.
  */
-public class Municipal implements IEnvio {
-
+public class EnvioInternacional implements IEnvio {
     private Integer precio;
 
     /**
-     * Constructor de envio tipo Municipal
+     * Constructor de envio tipo Internacional
      * 
      * @param precio el precio del envio
      */
-    public Municipal(Integer precio) {
+    public EnvioInternacional(Integer precio) {
         this.precio = precio;
     }
 
     @Override
     public String getTipoEnvio() {
-        return "Municipal";
+        return "Internacional";
     }
 
     @Override
     public String getTiempoDeEnvio() {
-        return "Tiempo envio 12 horas";
+        return "Tiempo envio 90 horas";
     }
 
     @Override
     public Integer getPrecio() {
         return this.precio;
     }
-
 }

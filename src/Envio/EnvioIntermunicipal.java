@@ -4,7 +4,7 @@ package Envio;
  * Implementacion de las reglas de IEnvio en
  * el envio de tipo Intermunicipal.
  */
-public class Intermunicipal implements IEnvio {
+public class EnvioIntermunicipal implements IEnvio {
 
     private Integer precio;
 
@@ -13,7 +13,7 @@ public class Intermunicipal implements IEnvio {
      * 
      * @param precio el precio del envio
      */
-    public Intermunicipal(Integer precio) {
+    public EnvioIntermunicipal(Integer precio) {
         this.precio = precio;
     }
 

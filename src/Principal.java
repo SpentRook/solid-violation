@@ -1,7 +1,7 @@
 import Envio.IEnvio;
-import Envio.Intermunicipal;
-import Envio.Internacional;
-import Envio.Municipal;
+import Envio.EnvioIntermunicipal;
+import Envio.EnvioInternacional;
+import Envio.EnvioMunicipal;
 import ImpresoraEnvios.ImpresoraEnvios;
 
 /**
@@ -18,9 +18,9 @@ public class Principal {
    */
   public static void main(String[] args) {
     IEnvio[] envios = {
-        new Municipal(5000),
-        new Intermunicipal(15000),
-        new Internacional(25000)
+        new EnvioMunicipal(5000),
+        new EnvioIntermunicipal(15000),
+        new EnvioInternacional(25000)
     };
 
     ImpresoraEnvios.imprimirTiempoDeEnvio(envios);
